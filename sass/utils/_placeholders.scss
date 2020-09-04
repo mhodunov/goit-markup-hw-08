@@ -1,0 +1,47 @@
+%LogoTextStyle {
+    font-family: Raleway, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+%HoverAnimation {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%Button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    background-color: $AdditionalColor;
+    color: $PrimaryTextColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    transition-property: color,
+        background-color,
+        box-shadow;
+    @extend %HoverAnimation;
+}
+
+%NavLink {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}

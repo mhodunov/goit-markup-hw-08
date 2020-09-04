@@ -1,0 +1,17 @@
+.logo {
+    @extend %LogoTextStyle;
+    color: $LogoColor;
+
+}
+
+.logo-first {
+    @extend %LogoTextStyle;
+    color: $AccentColor;
+
+}
+
+.logo-footer {
+    @extend %LogoTextStyle;
+    color: $AdditionalColor;
+
+}

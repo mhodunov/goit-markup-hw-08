@@ -1,0 +1,52 @@
+.social-link {
+    display: flex;
+    align-items: center;
+
+    &>li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 12px;
+
+        fill: $ClientsLogoBorder;
+        background-color: #ffffff;
+        border-radius: 50%;
+
+        transition-property: fill, background-color;
+        @extend %HoverAnimation;
+    }
+}
+
+.social-link-item:hover,
+.social-link-item:focus,
+.social-link-item.footer:hover,
+.social-link-item.footer:focus {
+    fill: $AdditionalColor;
+    background-size: 44px 44px;
+    background-color: $AccentColor;
+    border-radius: 50%;
+}
+
+.social-link-icon:hover,
+.social-link-icon:focus {
+    fill: $AdditionalColor;
+    transition-property: fill;
+    @extend %HoverAnimation;
+}
+
+.social-link-item.footer {
+    fill: $AdditionalColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition-property: fill, background-color;
+    @extend %HoverAnimation;
+}
+
+.follow-block {
+    margin-right: 94px;
+}

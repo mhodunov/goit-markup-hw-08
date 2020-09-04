@@ -1,0 +1,43 @@
+.footer-link {
+    color: $FooterContactsColor;
+    font-style: normal;
+    text-decoration: none;
+
+
+    &.address {
+        color: $AdditionalColor;
+    }
+}
+
+.footer-action {
+    margin-bottom: 20px;
+
+    color: var(--additional-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.footer-columns {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.logo-address {
+    margin-right: 69px;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.footer-contacts-mail {
+    margin-top: 9px;
+}
+
+.footer-contacts-phone {
+    margin-top: 6px;
+}

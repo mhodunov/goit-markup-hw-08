@@ -1,0 +1,61 @@
+.button {
+    @extend %Button;
+
+
+    &.primary {
+        background-color: $AccentColor;
+        color: $AdditionalColor;
+    }
+
+    &.filter {
+        background-color: $SecondaryBackground;
+        color: $SecondaryTextColor;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        padding: 6px 22px;
+        min-width: 73px;
+    }
+}
+
+.subscribe {
+    padding-left: 29px;
+    padding-right: 28px;
+}
+
+.subscribe-icon {
+    fill: $AdditionalColor;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    vertical-align: middle;
+}
+
+.filter-item {
+    margin-left: 8px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+
+
+.button.filter:hover,
+.button.filter:active,
+.button.filter:focus {
+    background-color: $AccentColor;
+    color: $AdditionalColor;
+    outline: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.send:hover,
+.send:focus,
+.primary:hover,
+.primary:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: $ButtonBackgroundHover;
+    outline: none;
+}

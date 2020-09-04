@@ -1,0 +1,178 @@
+.subscribe-field {
+    display: inline-block;
+    outline: none;
+
+    height: 50px;
+    min-width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: transparent;
+
+    font-size: 16px;
+    color: $AdditionalColor;
+
+    transition-property: border;
+    @extend %HoverAnimation;
+
+
+    &::placeholder {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+    }
+
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-color: $AdditionalColor;
+    }
+}
+
+
+.modal-form {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $PrimaryTextColor;
+
+    padding-right: 40px;
+    padding-left: 40px;
+
+
+    &-title {
+        margin-top: 40px;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $SecondaryTextColor;
+    }
+
+    &-field {
+        display: block;
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        padding-left: 42px;
+        padding-right: 12px;
+        margin-bottom: 10px;
+
+        outline: none;
+
+        transition-property: border;
+        @extend %HoverAnimation;
+    }
+
+    &-field::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &-label {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    &-icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translate(0%, -50%);
+        fill: $SecondaryTextColor;
+
+        transition-property: fill;
+        @extend %HoverAnimation;
+    }
+
+    &-wrap {
+        position: relative;
+    }
+}
+
+textarea.modal-form-field {
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+}
+
+
+
+.modal-form-field:focus+.modal-form-icon,
+.modal-form-field:hover+.modal-form-icon {
+    fill: $AccentColor;
+}
+
+.modal-form-field:focus,
+.modal-form-field:hover {
+    border: 1px solid $AccentColor;
+}
+
+.button-submit-wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.custom-checkbox-wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.custom-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+
+    border: 2px solid $SecondaryTextColor;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+
+    transition-property: border, background-color;
+    @extend %HoverAnimation;
+}
+
+.custom-checkbox:checked+.icon-check {
+    background-color: $AccentColor;
+    background-image: url(../images/icons/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $AccentColor;
+}
+
+.policy-link {
+    color: $AccentColor;
+    text-decoration: underline;
+}

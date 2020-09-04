@@ -1,0 +1,186 @@
+.section {
+    margin-top: $SectionMargin;
+
+    &-title {
+        margin-top: 0;
+        margin-bottom: 50px;
+
+        color: $SecondaryTextColor;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+    }
+
+    &-title-description {
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+        color: $SecondaryTextColor;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    &-title-description.white {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        background-color: $OverlayColor;
+        color: $AdditionalColor;
+        text-align: center;
+    }
+}
+
+
+.advantages {
+    display: flex;
+
+
+    &-item {
+        width: calc((100% - 90px) / 4);
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &-bg {
+        display: flex;
+
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        background-color: $SecondaryBackground;
+        border-radius: 4px;
+    }
+
+    &-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+.products {
+    display: flex;
+
+
+    &-item {
+        width: calc((100% - 60px) / 3);
+
+        position: relative;
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+.section-grey {
+    padding-top: $SectionGreyPadding;
+    padding-bottom: $SectionGreyPadding;
+    margin-top: $SectionMargin;
+
+    background-color: $SecondaryBackground;
+}
+
+.team-member {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+
+
+    &-card {
+        width: calc((100% - 90px) / 4);
+
+        background-color: $AdditionalColor;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &-card:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &.name {
+        margin-top: 0;
+        margin-bottom: 10px;
+        display: block;
+        color: $SecondaryTextColor;
+        font-weight: 500;
+    }
+
+    &.prof {
+        margin-top: 0;
+        margin-bottom: 16px;
+        display: block;
+    }
+
+    &-description {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
+.clients {
+    margin-top: $SectionMargin;
+
+
+    &-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &-list-item {
+        display: flex;
+
+        width: calc((100% - 150px) / 6);
+        height: 90px;
+        border: 1px solid $ClientsLogoBorder;
+        border-radius: 4px;
+
+        transition-property: border-color;
+        @extend %HoverAnimation;
+    }
+
+    &-list-item:hover,
+    &-list-item:focus {
+        border-color: $AccentColor;
+    }
+
+    &-list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        width: 170px;
+        margin: 0;
+        padding: 0;
+        fill: $ClientsLogoBorder;
+
+        transition-property: fill;
+        @extend %HoverAnimation;
+    }
+
+    &-link:hover,
+    &-link:focus {
+        fill: $AccentColor;
+    }
+}

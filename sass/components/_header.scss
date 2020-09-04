@@ -1,0 +1,94 @@
+.page-header {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 75px;
+
+    &-item {
+        margin-right: 50px;
+        position: relative;
+    }
+
+    &-item:last-child {
+        margin-right: 0;
+    }
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+    &-item {
+        margin-right: 30px;
+    }
+
+    &-item:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.site-nav-link {
+    @extend %NavLink;
+    color: $SecondaryTextColor;
+    transition-property: color;
+    @extend %HoverAnimation;
+
+    &::after {
+        content: "";
+        background-color: #ffffff;
+        transition-property: background-color;
+        @extend %HoverAnimation;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &.current::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $AccentColor;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(0px, 1px);
+    }
+
+    &.current {
+        color: $AccentColor;
+    }
+}
+
+
+
+.contacts-link {
+    @extend %NavLink;
+    color: $PrimaryTextColor;
+    fill: $PrimaryTextColor;
+    transition-property: color, fill;
+    @extend %HoverAnimation;
+}
+
+.icon-contacts {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.site-nav-link:hover,
+.contacts-link:hover,
+.site-nav-link:focus,
+.contacts-link:focus {
+    color: $AccentColor;
+    fill: $AccentColor;
+}
