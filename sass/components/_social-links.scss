@@ -1,6 +1,7 @@
 .social-link {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &>li:not(:last-child) {
         margin-right: 10px;
@@ -48,5 +49,6 @@
 }
 
 .follow-block {
-    margin-right: 94px;
+    /*margin-right: 94px;*/
+    margin-top: 60px;
 }

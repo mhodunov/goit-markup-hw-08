@@ -443,10 +443,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background-color: #ffffff;
 }
 
 footer {
-  margin-top: 94px;
+  margin-top: 60px;
   background-color: #2f303a;
 }
 
@@ -467,7 +468,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  /*width: 1200px;*/
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -488,6 +489,10 @@ img {
 
 .logo {
   color: #000000;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
 }
 
 .logo-first {
@@ -502,12 +507,11 @@ img {
   position: relative;
   margin: 0;
   border-bottom: 1px solid #ececec;
+  height: 60px;
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -530,9 +534,7 @@ img {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -601,10 +603,12 @@ img {
 }
 
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 400px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.8);
@@ -615,7 +619,6 @@ img {
 }
 
 .hero-text-area {
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -624,8 +627,8 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -647,6 +650,7 @@ img {
 .subscribe {
   padding-left: 29px;
   padding-right: 28px;
+  margin-top: 20px;
 }
 
 .subscribe-icon {
@@ -686,12 +690,12 @@ img {
 }
 
 .section {
-  margin-top: 94px;
+  margin-top: 60px;
 }
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -723,25 +727,23 @@ img {
   text-align: center;
 }
 
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .advantages-item {
-  width: calc((100% - 90px) / 4);
+  max-width: 480px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: calc((100% - 90px) / 4);*/
 }
 
 .advantages-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-bg {
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -757,10 +759,17 @@ img {
   height: 70px;
 }
 
+.advantages-item-text {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
 .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .products-item {
@@ -773,23 +782,22 @@ img {
 }
 
 .section-grey {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 60px;
   background-color: #f5f4fa;
 }
 
 .team-member {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
 .team-member-card {
-  width: calc((100% - 90px) / 4);
+  /*width: calc((100% - 90px) / 4);*/
+  width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -797,7 +805,7 @@ img {
 }
 
 .team-member-card:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-member.name {
@@ -817,12 +825,12 @@ img {
 .team-member-description {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .clients {
-  margin-top: 94px;
+  margin-top: 60px;
 }
 
 .clients-list {
@@ -832,16 +840,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients-list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  margin-bottom: 30px;
   -webkit-transition-property: border-color;
   transition-property: border-color;
 }
@@ -850,8 +861,16 @@ img {
   border-color: #2196f3;
 }
 
-.clients-list-item:not(:last-child) {
+.clients-list-item:not(:nth-child(2n)) {
   margin-right: 30px;
+}
+
+.clients-list-item:nth-child(5) {
+  margin-bottom: 0px;
+}
+
+.clients-list-item:nth-child(6) {
+  margin-bottom: 0px;
 }
 
 .clients-link {
@@ -1002,7 +1021,7 @@ img {
 
 .footer-action {
   margin-bottom: 20px;
-  color: var(--additional-color);
+  color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1010,18 +1029,16 @@ img {
 }
 
 .footer-columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-bottom: 60px;
   padding-top: 60px;
+  text-align: center;
 }
 
 .logo-address {
-  margin-right: 69px;
+  /*margin-right: 69px;*/
 }
 
 .address {
@@ -1029,11 +1046,15 @@ img {
 }
 
 .footer-contacts-mail {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .footer-contacts-phone {
-  margin-top: 6px;
+  margin-top: 8px;
+}
+
+.subscribe-form {
+  margin-top: 60px;
 }
 
 .social-link {
@@ -1043,6 +1064,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-link > li:not(:last-child) {
@@ -1091,7 +1115,8 @@ img {
 }
 
 .follow-block {
-  margin-right: 94px;
+  /*margin-right: 94px;*/
+  margin-top: 60px;
 }
 
 .subscribe-field {
@@ -1099,7 +1124,7 @@ img {
   outline: none;
   height: 50px;
   min-width: 358px;
-  margin-right: 12px;
+  /*margin-right: 12px;*/
   padding-left: 16px;
   padding-right: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);

@@ -12,7 +12,7 @@
 .footer-action {
     margin-bottom: 20px;
 
-    color: var(--additional-color);
+    color: $AdditionalColor;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -20,14 +20,15 @@
 }
 
 .footer-columns {
-    display: flex;
     align-items: baseline;
     padding-bottom: 60px;
     padding-top: 60px;
+
+    text-align: center;
 }
 
 .logo-address {
-    margin-right: 69px;
+    /*margin-right: 69px;*/
 }
 
 .address {
@@ -35,9 +36,13 @@
 }
 
 .footer-contacts-mail {
-    margin-top: 9px;
+    margin-top: 8px;
 }
 
 .footer-contacts-phone {
-    margin-top: 6px;
+    margin-top: 8px;
+}
+
+.subscribe-form {
+    margin-top: 60px;
 }

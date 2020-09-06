@@ -1,9 +1,9 @@
 .section {
-    margin-top: $SectionMargin;
+    margin-top: $SectionMarginMobile;
 
     &-title {
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         color: $SecondaryTextColor;
         font-weight: 700;
@@ -41,21 +41,22 @@
 
 
 .advantages {
-    display: flex;
-
 
     &-item {
-        width: calc((100% - 90px) / 4);
+        max-width: 480px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /*width: calc((100% - 90px) / 4);*/
     }
 
     &-item:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
     &-bg {
-        display: flex;
-
         height: 120px;
+        display: flex;
         align-items: center;
         justify-content: center;
         background-color: $SecondaryBackground;
@@ -66,11 +67,20 @@
         width: 70px;
         height: 70px;
     }
+
+    &-item-text {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
+.mobile-hidden {
+    display: none;
+}
+
 .products {
-    display: flex;
+    display: none;
 
 
     &-item {
@@ -86,22 +96,23 @@
 
 
 .section-grey {
-    padding-top: $SectionGreyPadding;
-    padding-bottom: $SectionGreyPadding;
-    margin-top: $SectionMargin;
+    padding-top: $SectionGreyPaddingMobile;
+    padding-bottom: $SectionGreyPaddingMobile;
+    margin-top: $SectionMarginMobile;
 
     background-color: $SecondaryBackground;
 }
 
 .team-member {
-    display: flex;
+    /*display: flex;*/
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 
 
     &-card {
-        width: calc((100% - 90px) / 4);
+        /*width: calc((100% - 90px) / 4);*/
+        width: 100%;
 
         background-color: $AdditionalColor;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -109,7 +120,7 @@
     }
 
     &-card:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
     &.name {
@@ -129,28 +140,31 @@
     &-description {
         padding-top: 30px;
         padding-bottom: 24px;
-        padding-left: 32px;
-        padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 
 .clients {
-    margin-top: $SectionMargin;
+    margin-top: $SectionMarginMobile;
 
 
     &-list {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &-list-item {
         display: flex;
 
-        width: calc((100% - 150px) / 6);
+
+        width: calc((100% - 30px) / 2);
         height: 90px;
         border: 1px solid $ClientsLogoBorder;
         border-radius: 4px;
+        margin-bottom: 30px;
 
         transition-property: border-color;
         @extend %HoverAnimation;
@@ -161,8 +175,16 @@
         border-color: $AccentColor;
     }
 
-    &-list-item:not(:last-child) {
+    &-list-item:not(:nth-child(2n)) {
         margin-right: 30px;
+    }
+
+    &-list-item:nth-child(5) {
+        margin-bottom: 0px;
+    }
+
+    &-list-item:nth-child(6) {
+        margin-bottom: 0px;
     }
 
     &-link {

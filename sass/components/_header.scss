@@ -2,10 +2,11 @@
     position: relative;
     margin: 0;
     border-bottom: 1px solid #ececec;
+    height: 60px;
 }
 
 .main-nav {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .contacts {
-    display: flex;
+    display: none;
     margin-left: auto;
 
     &-item {
