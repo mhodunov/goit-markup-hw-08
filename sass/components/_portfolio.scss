@@ -6,9 +6,14 @@
     /*width: calc((100% - 60px) / 3);
     margin-right: 30px;*/
     max-width: 450px;
+    width: 100%;
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
 
 
     &-link {
@@ -65,9 +70,9 @@
 
     &-text {
         margin: 0;
-        padding: 63px 24px;
+        padding: 77px 24px;
         width: 100%;
-        height: 100%;
+        height: 294px;
         position: absolute;
         top: 0;
         left: 0;
@@ -87,6 +92,7 @@
 .overlay-portfolio-text {
     position: relative;
     overflow: hidden;
+    min-height: 294px;
 }
 
 .portfolio-card-link:hover .portfolio-item-text,

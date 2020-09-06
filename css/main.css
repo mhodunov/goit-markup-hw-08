@@ -905,6 +905,7 @@ img {
   /*width: calc((100% - 60px) / 3);
     margin-right: 30px;*/
   max-width: 450px;
+  width: 100%;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -915,6 +916,10 @@ img {
     &:nth-child(3n) {
         margin-right: 0;
     }*/
+}
+
+.portfolio-card:last-child {
+  margin-bottom: 0px;
 }
 
 .portfolio-card-link {
@@ -960,9 +965,9 @@ img {
 
 .portfolio-item-text {
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   width: 100%;
-  height: 100%;
+  height: 294px;
   position: absolute;
   top: 0;
   left: 0;
@@ -981,6 +986,7 @@ img {
 .overlay-portfolio-text {
   position: relative;
   overflow: hidden;
+  min-height: 294px;
 }
 
 .portfolio-card-link:hover .portfolio-item-text,
@@ -988,7 +994,7 @@ img {
   -webkit-transform: translatey(0);
           transform: translatey(0);
   width: 100%;
-  height: 294px;
+  height: 100%;
 }
 
 .filter-list {
