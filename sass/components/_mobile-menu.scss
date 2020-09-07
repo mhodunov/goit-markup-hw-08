@@ -1,0 +1,184 @@
+@media screen and (max-width: 767px) {
+    .menu-btn {
+        display: inline-flex;
+        padding: 0;
+        color: $SecondaryTextColor;
+        background-color: $AdditionalColor;
+        background-origin: border-box;
+        border: none;
+
+        &:hover,
+        &:focus {
+            color: $AccentColor;
+        }
+
+        & .open-icon {
+            display: block;
+        }
+
+        & .close-icon {
+            display: none;
+        }
+    }
+
+    .menu-icon {
+        fill: currentColor;
+    }
+
+    .menu-btn.is-open .open-icon {
+        display: none;
+    }
+
+    .menu-btn.is-open .close-icon {
+        display: block;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 60px 10px;
+        text-align: center;
+        background-color: $AdditionalColor;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
+
+        visibility: hidden;
+        z-index: -1;
+        pointer-events: none;
+        transform: translateY(-100%);
+        transition: transform 200ms linear, visibility 300ms linear;
+
+        &.is-open {
+            transform: translateY(0);
+            visibility: visible;
+            pointer-events: initial;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .menu-container {
+        display: none;
+    }
+}
+
+.site-nav-mobile {
+    padding-top: 60px;
+
+    &-item {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &-item:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.contacts-mobile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-item {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.site-nav-link-mobile {
+    color: $SecondaryTextColor;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    @extend %HoverAnimation;
+
+    &::after {
+        content: "";
+        background-color: #ffffff;
+        transition-property: background-color;
+        @extend %HoverAnimation;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &.current::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $AccentColor;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        transform: translate(0px, 1px);
+    }
+
+    &.current {
+        color: $AccentColor;
+    }
+}
+
+
+
+.contacts-link-mobile {
+    color: $PrimaryTextColor;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    fill: $PrimaryTextColor;
+    transition-property: color, fill;
+    @extend %HoverAnimation;
+}
+
+.icon-contacts {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.site-nav-link-mobile:hover,
+.contacts-link-mobile:hover,
+.site-nav-link-mobile:focus,
+.contacts-link-mobile:focus {
+    color: $AccentColor;
+    fill: $AccentColor;
+}
+
+.logo-mobile {
+    font-family: Raleway, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: $SecondaryTextColor;
+}
+
+.logo-first-mobile {
+    color: $AccentColor;
+}
