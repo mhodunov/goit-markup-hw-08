@@ -1837,7 +1837,7 @@ textarea.modal-form-field {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  max-width: 450px;
 }
 
 @media screen and (max-width: 767px) {
