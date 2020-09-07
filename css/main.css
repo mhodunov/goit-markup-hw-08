@@ -770,14 +770,6 @@ img {
   vertical-align: middle;
 }
 
-.filter-item {
-  /*margin-left: 8px;
-
-    &:first-child {
-        margin-left: 0;
-    }*/
-}
-
 .button.filter:hover,
 .button.filter:active,
 .button.filter:focus {
@@ -1289,6 +1281,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1299,9 +1292,38 @@ img {
   }
 }
 
-.filter-item {
+@media screen and (max-width: 319px) {
+  .filter-list {
+    display: block;
+  }
+}
+
+.filter-item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .filter-item:not(:last-child):nth-child(3n) {
+    margin-right: 0px;
+  }
+  .filter-item:not(:last-child):not(:nth-last-child(-n+2)) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .filter-item:not(:last-child):nth-child(2n) {
+    margin-right: 0px;
+  }
+  .filter-item:not(:last-child):not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .filter-item:not(:last-child):not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-section {

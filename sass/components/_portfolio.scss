@@ -130,17 +130,55 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    text-align: center;
 
     @media screen and (min-width: $tablet) {
 
         justify-content: center;
 
     }
+
+    @media screen and (max-width: 319px) {
+
+        display: block;
+
+    }
 }
 
-.filter-item {
+.filter-item:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 15px;
+
+    @media screen and (min-width: 400px) and (max-width: 767px) {
+
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
+
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 15px;
+        }
+
+    }
+
+    @media screen and (max-width: 399px) {
+
+        &:nth-child(2n) {
+            margin-right: 0px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: 319px) {
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    }
+
 }
 
 .filter-section {
