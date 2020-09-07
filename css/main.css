@@ -1162,24 +1162,48 @@ img {
 }
 
 .portfolio-card {
-  /*width: calc((100% - 60px) / 3);
-    margin-right: 30px;*/
-  max-width: 450px;
-  width: 100%;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
   /*&:nth-last-child(-n + 3) {
         margin-bottom: 0;
     }
 
-    &:nth-child(3n) {
-        margin-right: 0;
-    }*/
+    */
 }
 
-.portfolio-card:last-child {
-  margin-bottom: 0px;
+@media screen and (max-width: 767px) {
+  .portfolio-card {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .portfolio-card:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-card {
+    width: calc((100% - 30px) / 2);
+  }
+  .portfolio-card:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .portfolio-card:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-card {
+    width: calc((100% - 60px) / 3);
+  }
+  .portfolio-card:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .portfolio-card:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-card-link {
@@ -1263,8 +1287,16 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filter-item {
