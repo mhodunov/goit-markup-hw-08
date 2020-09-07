@@ -22,6 +22,10 @@ body {
 footer {
     margin-top: $SectionMarginMobile;
     background-color: $FooterBackground;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: $SectionMarginDesktop;
+    }
 }
 
 button {
@@ -41,11 +45,21 @@ img {
 }
 
 .container {
-    /*width: 1200px;*/
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 15px;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
 
 .visually-hidden {

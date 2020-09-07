@@ -1,3 +1,5 @@
+/*Colors*/
+
 $PrimaryTextColor: #757575;
 $SecondaryTextColor: #212121;
 $AccentColor: #2196f3;
@@ -12,5 +14,15 @@ $FooterBackground: #2f303a;
 $ClientsLogoBorder: #afb1b8;
 $ButtonBackgroundHover: #188ce8;
 
+/*Margins & Paddings*/
+
 $SectionMarginMobile: 60px;
 $SectionGreyPaddingMobile: 60px;
+$SectionMarginDesktop: 94px;
+$SectionGreyPaddingDesktop: 94px;
+
+/*Breakpoints*/
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

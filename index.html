@@ -109,15 +109,32 @@
 				<h2 class="section-title mobile-hidden">Чем мы занимаемся</h2>
 				<ul class="list products">
 					<li class="products-item">
-						<img src="./images/desktop-app.jpg" alt="десктопные приложения" width="370" height="294" />
+						<picture>
+							<source srcset="./images/desktop/desktop-app.webp 1x, 
+                ./images/desktop/desktop-app-2x.webp 2x" type="image/webp">
+							<img srcset="./images/desktop/desktop-app.jpg 1x, 
+                  ./images/desktop/desktop-app-2x.jpg 2x" src="./images/desktop/desktop-app.jpg"
+								alt="десктопные приложения">
+						</picture>
 						<h3 class="section-title-description white">Десктопные приложения</h3>
 					</li>
 					<li class="products-item">
-						<img src="./images/mobile-app.jpg" alt="мобильные приложения" width="370" height="294" />
+						<picture>
+							<source srcset="./images/desktop/mobile-app.webp 1x, 
+                ./images/desktop/mobile-app-2x.webp 2x" type="image/webp">
+							<img srcset="./images/desktop/mobile-app.jpg 1x, 
+                  ./images/desktop/mobile-app-2x.jpg 2x" src="./images/desktop/mobile-app.jpg"
+								alt="мобильные приложения">
+						</picture>
 						<h3 class="section-title-description white">Мобильные приложения</h3>
 					</li>
 					<li class="products-item">
-						<img src="./images/design.jpg" alt="дизайн приложений" width="370" height="294" />
+						<picture>
+							<source srcset="./images/desktop/design.webp 1x, 
+                ./images/desktop/design-2x.webp 2x" type="image/webp">
+							<img srcset="./images/desktop/design.jpg 1x, 
+                  ./images/desktop/design-2x.jpg 2x" src="./images/desktop/design.jpg" alt="дизайн">
+						</picture>
 						<h3 class="section-title-description white">Дизайнерские решения</h3>
 					</li>
 				</ul>
@@ -129,8 +146,20 @@
 				<h2 class="section-title">Наша команда</h2>
 				<ul class="list team-member">
 					<li class="team-member-card">
-						<img src="./images/product-designer.jpg" alt="продуктовый дизайнер Николай Кучеренко"
-							width="450" height="460" />
+						<picture class="team-member-photo">
+							<source srcset="./images/desktop/team1-1200.webp 1x, ./images/desktop/team1-1200-2x.webp 2x"
+								media="(min-width: 1200px)" type="image/webp">
+							<source srcset="./images/tablet/team1-768.webp 1x, ./images/tablet/team1-768-2x.webp 2x"
+								media="(min-width: 768px)" type="image/webp">
+							<source srcset="./images/mobile/team1-480.webp 1x, ./images/mobile/team1-480-2x.webp 2x"
+								type="image/webp">
+							<source srcset="./images/desktop/team1-1200.jpg 1x, ./images/desktop/team1-1200-2x.jpg 2x"
+								media="(min-width: 1200px)">
+							<source srcset="./images/tablet/team1-768.jpg 1x, ./images/tablet/team1-768-2x.jpg 2x"
+								media="(min-width: 768px)">
+							<source srcset="./images/mobile/team1-480.jpg 1x, ./images/mobile/team1-480-2x.jpg 2x">
+							<img src="./images/desktop/team1-1200.jpg" alt="продуктовый дизайнер Игорь Демьяненко">
+						</picture>
 						<div class="team-member-description">
 							<h3 class="team-member name">Игорь Демьяненко</h3>
 							<p class="team-member prof" lang="en">Product Designer</p>
@@ -171,8 +200,20 @@
 						</div>
 					</li>
 					<li class="team-member-card">
-						<img src="./images/frontend.jpg" alt="фронт-энд разработчик Ольга Иванова" width="450"
-							height="460" />
+						<picture class="team-member-photo">
+							<source srcset="./images/desktop/team2-1200.webp 1x, ./images/desktop/team2-1200-2x.webp 2x"
+								media="(min-width: 1200px)" type="image/webp">
+							<source srcset="./images/tablet/team2-768.webp 1x, ./images/tablet/team2-768-2x.webp 2x"
+								media="(min-width: 768px)" type="image/webp">
+							<source srcset="./images/mobile/team2-480.webp 1x, ./images/mobile/team2-480-2x.webp 2x"
+								type="image/webp">
+							<source srcset="./images/desktop/team2-1200.jpg 1x, ./images/desktop/team2-1200-2x.jpg 2x"
+								media="(min-width: 1200px)">
+							<source srcset="./images/tablet/team2-768.jpg 1x, ./images/tablet/team2-768-2x.jpg 2x"
+								media="(min-width: 768px)">
+							<source srcset="./images/mobile/team2-480.jpg 1x, ./images/mobile/team2-480-2x.jpg 2x">
+							<img src="./images/desktop/team2-1200.jpg" alt="фронт-энд разработчик Ольга Репина">
+						</picture>
 						<div class="team-member-description">
 							<h3 class="team-member name">Ольга Репина</h3>
 							<p class="team-member prof" lang="en">Frontend Developer</p>
@@ -213,7 +254,20 @@
 						</div>
 					</li>
 					<li class="team-member-card">
-						<img src="./images/marketing.jpg" alt="маркетолог Андрей Шевченко" width="450" height="460" />
+						<picture class="team-member-photo">
+							<source srcset="./images/desktop/team3-1200.webp 1x, ./images/desktop/team3-1200-2x.webp 2x"
+								media="(min-width: 1200px)" type="image/webp">
+							<source srcset="./images/tablet/team3-768.webp 1x, ./images/tablet/team3-768-2x.webp 2x"
+								media="(min-width: 768px)" type="image/webp">
+							<source srcset="./images/mobile/team3-480.webp 1x, ./images/mobile/team3-480-2x.webp 2x"
+								type="image/webp">
+							<source srcset="./images/desktop/team3-1200.jpg 1x, ./images/desktop/team3-1200-2x.jpg 2x"
+								media="(min-width: 1200px)">
+							<source srcset="./images/tablet/team3-768.jpg 1x, ./images/tablet/team3-768-2x.jpg 2x"
+								media="(min-width: 768px)">
+							<source srcset="./images/mobile/team3-480.jpg 1x, ./images/mobile/team3-480-2x.jpg 2x">
+							<img src="./images/desktop/team3-1200.jpg" alt="маркетолог Иван Тарасов">
+						</picture>
 						<div class="team-member-description">
 							<h3 class="team-member name">Николай Тарасов</h3>
 							<p class="team-member prof" lang="en">Marketing</p>
@@ -254,7 +308,20 @@
 						</div>
 					</li>
 					<li class="team-member-card">
-						<img src="./images/ui.jpg" alt="дизайнер Иван Николаев" width="450" height="460" />
+						<picture class="team-member-photo">
+							<source srcset="./images/desktop/team4-1200.webp 1x, ./images/desktop/team4-1200-2x.webp 2x"
+								media="(min-width: 1200px)" type="image/webp">
+							<source srcset="./images/tablet/team4-768.webp 1x, ./images/tablet/team4-768-2x.webp 2x"
+								media="(min-width: 768px)" type="image/webp">
+							<source srcset="./images/mobile/team4-480.webp 1x, ./images/mobile/team4-480-2x.webp 2x"
+								type="image/webp">
+							<source srcset="./images/desktop/team4-1200.jpg 1x, ./images/desktop/team4-1200-2x.jpg 2x"
+								media="(min-width: 1200px)">
+							<source srcset="./images/tablet/team4-768.jpg 1x, ./images/tablet/team4-768-2x.jpg 2x"
+								media="(min-width: 768px)">
+							<source srcset="./images/mobile/team4-480.jpg 1x, ./images/mobile/team4-480-2x.jpg 2x">
+							<img src="./images/desktop/team4-1200.jpg" alt="дизайнер Михаил Ермаков">
+						</picture>
 						<div class="team-member-description">
 							<h3 class="team-member name">Михаил Ермаков</h3>
 							<p class="team-member prof" lang="en">UI Designer</p>
