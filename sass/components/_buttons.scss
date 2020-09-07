@@ -24,6 +24,13 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width:1199px) {
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 12px;
+        margin-right: 0px;
+    }
 }
 
 .subscribe-icon {

@@ -3,8 +3,6 @@
     outline: none;
 
     height: 50px;
-    min-width: 358px;
-    /*margin-right: 12px;*/
     padding-left: 16px;
     padding-right: 16px;
 
@@ -17,6 +15,20 @@
 
     transition-property: border;
     @extend %HoverAnimation;
+
+    @media screen and (min-width: $desktop) {
+
+        width: 358px;
+
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
 
 
     &::placeholder {

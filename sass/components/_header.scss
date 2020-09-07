@@ -1,13 +1,24 @@
 .page-header {
-    position: relative;
     margin: 0;
     border-bottom: 1px solid #ececec;
-    height: 60px;
+}
+
+.mobile-nav {
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .main-nav {
-    display: none;
     align-items: center;
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+
+        display: none;
+
+    }
 }
 
 .site-nav {
@@ -25,7 +36,7 @@
 }
 
 .contacts {
-    display: none;
+    display: flex;
     margin-left: auto;
 
     &-item {

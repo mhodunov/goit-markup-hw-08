@@ -49,6 +49,9 @@
 }
 
 .follow-block {
-    /*margin-right: 94px;*/
-    margin-top: 60px;
+    margin-top: 0px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
 }
