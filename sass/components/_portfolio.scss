@@ -182,7 +182,17 @@
 }
 
 .filter-section {
-    margin-top: $SectionMarginMobile;
+    @media screen and (max-width:767px) {
+        margin-top: 120px
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-top: $SectionMarginMobile;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: $SectionMarginDesktop;
+    }
 }
 
 .works-section {
