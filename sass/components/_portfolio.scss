@@ -108,6 +108,16 @@
 
         transition-property: transform;
         @extend %HoverAnimation;
+
+        @media screen and (max-width: 479px) {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        @media screen and (max-width: 380px) {
+            padding: 15px;
+            font-size: 16px;
+        }
     }
 }
 
@@ -115,6 +125,11 @@
     position: relative;
     overflow: hidden;
     min-height: 294px;
+
+    @media screen and (max-width: 479px) {
+        min-height: 0px;
+        max-height: 294px;
+    }
 }
 
 .portfolio-card-link:hover .portfolio-item-text,

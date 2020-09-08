@@ -1359,10 +1359,31 @@ img {
   transition-property: transform, -webkit-transform;
 }
 
+@media screen and (max-width: 479px) {
+  .portfolio-item-text {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .portfolio-item-text {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
 .overlay-portfolio-text {
   position: relative;
   overflow: hidden;
   min-height: 294px;
+}
+
+@media screen and (max-width: 479px) {
+  .overlay-portfolio-text {
+    min-height: 0px;
+    max-height: 294px;
+  }
 }
 
 .portfolio-card-link:hover .portfolio-item-text,
