@@ -109,6 +109,18 @@
         transition-property: transform;
         @extend %HoverAnimation;
 
+
+
+        @media screen and (min-width: $tablet) {
+            padding-top: 49px;
+            padding-bottom: 49px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 63px;
+            padding-bottom: 63px;
+        }
+
         @media screen and (max-width: 479px) {
             padding-top: 45px;
             padding-bottom: 45px;

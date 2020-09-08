@@ -1359,6 +1359,20 @@ img {
   transition-property: transform, -webkit-transform;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-item-text {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-item-text {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .portfolio-item-text {
     padding-top: 45px;
