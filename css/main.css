@@ -573,12 +573,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 75px;
+  margin-left: 93px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav {
-    margin-left: 86px;
+    margin-left: 88px;
   }
 }
 
@@ -779,29 +779,29 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/mobile/header480.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/mobile/header480.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/header480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header480.jpg);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/mobile/header480-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/mobile/header480-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/header480-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header480-2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/tablet/header768.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/header768.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/header768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/header768.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/tablet/header768-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/header768-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/header768-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/header768-2x.jpg);
   }
 }
 
@@ -812,15 +812,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 200px 0px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/desktop/header1200.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/header1200.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/header1200.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header1200.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/desktop/header1200-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/header1200-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/header1200-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header1200-2x.jpg);
   }
 }
 
@@ -840,8 +840,8 @@ img {
 
 .subscribe {
   display: block;
-  padding-left: 29px;
-  padding-right: 28px;
+  padding-left: 27px;
+  padding-right: 27px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -851,7 +851,7 @@ img {
   .subscribe {
     display: inline-block;
     margin-top: 0px;
-    margin-left: 12px;
+    margin-left: 8px;
     margin-right: 0px;
   }
 }
@@ -1089,6 +1089,12 @@ img {
   padding-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member-description {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1454,6 +1460,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
+  display: block;
+  margin-right: 0px;
 }
 
 .footer-link.address {
@@ -1497,9 +1505,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-columns {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     text-align: left;
@@ -1515,7 +1520,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo-address {
-    width: calc(25% - 30px);
+    width: 231px;
     margin-right: 0;
     text-align: left;
     margin-bottom: 0;
@@ -1541,6 +1546,12 @@ img {
 @media screen and (max-width: 1199px) {
   .subscribe-form {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    margin-left: 93px;
   }
 }
 
@@ -1608,6 +1619,12 @@ img {
 @media screen and (max-width: 767px) {
   .follow-block {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .follow-block {
+    margin-left: 70px;
   }
 }
 
@@ -1683,6 +1700,7 @@ img {
 .modal-form-title {
   display: block;
   margin-bottom: 12px;
+  margin-top: 0px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;

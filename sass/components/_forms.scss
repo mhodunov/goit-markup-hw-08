@@ -1,7 +1,6 @@
 .subscribe-field {
     display: inline-block;
     outline: none;
-
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
@@ -58,6 +57,7 @@
     &-title {
         display: block;
         margin-bottom: 12px;
+        margin-top: 0px;
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;

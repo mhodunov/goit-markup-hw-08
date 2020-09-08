@@ -2,6 +2,8 @@
     color: $FooterContactsColor;
     font-style: normal;
     text-decoration: none;
+    display: block;
+    margin-right: 0px;
 
 
     &.address {
@@ -34,7 +36,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        justify-content: space-between;
+
         flex-wrap: nowrap;
         text-align: left;
     }
@@ -49,7 +51,7 @@
 
 
     @media screen and (min-width: $desktop) {
-        width: calc(25% - 30px);
+        width: 231px;
         margin-right: 0;
         text-align: left;
         margin-bottom: 0;
@@ -73,5 +75,10 @@
 
     @media screen and (max-width: 1199px) {
         margin-top: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+
     }
 }

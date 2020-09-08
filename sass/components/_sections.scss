@@ -193,6 +193,10 @@
         padding-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (min-width: $desktop) {
+            padding-bottom: 30px;
+        }
     }
 }
 
