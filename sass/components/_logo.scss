@@ -4,7 +4,11 @@
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 15px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
 
 }
 
@@ -12,10 +16,20 @@
     @extend %LogoTextStyle;
     color: $AccentColor;
 
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
 }
 
 .logo-footer {
     @extend %LogoTextStyle;
     color: $AdditionalColor;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
 
 }

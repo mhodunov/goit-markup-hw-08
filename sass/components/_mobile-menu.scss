@@ -4,7 +4,7 @@
     height: 60px;
     background-color: #fff;
     border-bottom: 1px solid #ececec;
-    z-index: 999;
+    z-index: 149;
 
     @media screen and (min-width: $tablet) {
         display: none;
@@ -171,11 +171,6 @@
     fill: $PrimaryTextColor;
     transition-property: color, fill;
     @extend %HoverAnimation;
-}
-
-.icon-contacts {
-    margin-right: 10px;
-    vertical-align: middle;
 }
 
 .site-nav-link-mobile:hover,

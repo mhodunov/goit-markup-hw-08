@@ -3,18 +3,11 @@
     border-bottom: 1px solid #ececec;
 }
 
-.mobile-nav {
-
-    @media screen and (min-width: $desktop) {
-        display: none;
-    }
-}
-
 .main-nav {
     align-items: center;
     display: flex;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
 
         display: none;
 
@@ -24,6 +17,10 @@
 .site-nav {
     display: flex;
     margin-left: 75px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: 86px;
+    }
 
     &-item {
         margin-right: 50px;
@@ -39,8 +36,16 @@
     display: flex;
     margin-left: auto;
 
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: block;
+    }
+
     &-item {
         margin-right: 30px;
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            margin-right: 0px;
+        }
     }
 
     &-item:last-child {
@@ -90,11 +95,52 @@
     fill: $PrimaryTextColor;
     transition-property: color, fill;
     @extend %HoverAnimation;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding: 0;
+        margin-bottom: 10px;
+        line-height: 1.17;
+        font-size: 12px;
+    }
+}
+
+.contacts-link.icon-phone {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 0px;
+    }
 }
 
 .icon-contacts {
-    margin-right: 10px;
+
     vertical-align: middle;
+    width: 16px;
+    height: 12px;
+
+    @media screen and (max-width: 767px) {
+        margin-right: 10px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 10px;
+    }
+}
+
+.icon-contacts.phone {
+
+    width: 10px;
+    height: 15px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: 10px;
+        height: 14px;
+    }
+
 }
 
 .site-nav-link:hover,

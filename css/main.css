@@ -517,26 +517,40 @@ img {
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .logo-first {
   color: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .logo-first {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
 .logo-footer {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo-footer {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .page-header {
   margin: 0;
   border-bottom: 1px solid #ececec;
-}
-
-@media screen and (min-width: 1200px) {
-  .mobile-nav {
-    display: none;
-  }
 }
 
 .main-nav {
@@ -548,7 +562,7 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .main-nav {
     display: none;
   }
@@ -559,6 +573,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-left: 75px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    margin-left: 86px;
+  }
 }
 
 .site-nav-item {
@@ -577,8 +597,20 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+  }
+}
+
 .contacts-item {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-item {
+    margin-right: 0px;
+  }
 }
 
 .contacts-item:last-child {
@@ -622,9 +654,57 @@ img {
   transition-property: color, fill;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-link {
+    padding: 0;
+    margin-bottom: 10px;
+    line-height: 1.17;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-link.icon-phone {
+    margin-bottom: 0px;
+  }
+}
+
 .icon-contacts {
-  margin-right: 10px;
   vertical-align: middle;
+  width: 16px;
+  height: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-contacts {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-contacts {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-contacts {
+    margin-right: 10px;
+  }
+}
+
+.icon-contacts.phone {
+  width: 10px;
+  height: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-contacts.phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .site-nav-link:hover,
@@ -1699,7 +1779,14 @@ textarea.modal-form-field {
           justify-content: center;
   margin-top: 20px;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.71;
+}
+
+@media screen and (max-width: 1199px) {
+  .custom-checkbox-wrap {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .custom-checkbox {
@@ -1756,10 +1843,12 @@ textarea.modal-form-field {
   bottom: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition-property: opacity;
   transition-property: opacity;
+  z-index: 200;
 }
 
 .backdrop.is-hidden {
@@ -1818,7 +1907,7 @@ textarea.modal-form-field {
   height: 60px;
   background-color: #fff;
   border-bottom: 1px solid #ececec;
-  z-index: 999;
+  z-index: 149;
 }
 
 @media screen and (min-width: 768px) {
@@ -1857,6 +1946,7 @@ textarea.modal-form-field {
   }
   .menu-btn .open-icon {
     display: block;
+    padding-right: 15px;
   }
   .menu-btn .close-icon {
     display: none;
@@ -1983,11 +2073,6 @@ textarea.modal-form-field {
   fill: #757575;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
-}
-
-.icon-contacts {
-  margin-right: 10px;
-  vertical-align: middle;
 }
 
 .site-nav-link-mobile:hover,
