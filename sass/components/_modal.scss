@@ -16,6 +16,7 @@
 
     @media screen and (max-width: 1199px) {
         overflow: scroll;
+        padding-bottom: 60px;
     }
 
     &.is-hidden {
@@ -39,7 +40,7 @@
 
     @media screen and (max-width: 1199px) {
 
-        transform: translate(-50%, -25%);
+        transform: translate(-50%, -30%);
         margin-bottom: 60px;
 
     }
