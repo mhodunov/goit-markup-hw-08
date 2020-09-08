@@ -1880,6 +1880,7 @@ textarea.modal-form-field {
   .modal-window {
     -webkit-transform: translate(-50%, -25%);
             transform: translate(-50%, -25%);
+    margin-bottom: 60px;
   }
 }
 
