@@ -1853,7 +1853,6 @@ textarea.modal-form-field {
 @media screen and (max-width: 1199px) {
   .backdrop {
     overflow: scroll;
-    padding-bottom: 60px;
   }
 }
 
@@ -1877,11 +1876,10 @@ textarea.modal-form-field {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-height: 600px) {
   .modal-window {
-    -webkit-transform: translate(-50%, -30%);
-            transform: translate(-50%, -30%);
-    margin-bottom: 60px;
+    -webkit-transform: translate(-50%, -25%);
+            transform: translate(-50%, -25%);
   }
 }
 
