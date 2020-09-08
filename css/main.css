@@ -462,6 +462,7 @@ footer {
 
 button {
   font-family: inherit;
+  background-color: #fff;
 }
 
 img {
@@ -1677,12 +1678,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-  padding-right: 40px;
-  padding-left: 40px;
 }
 
 .modal-form-title {
-  margin-top: 40px;
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1869,7 +1868,10 @@ textarea.modal-form-field {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-  max-width: 528px;
+  max-width: 450px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1883,6 +1885,12 @@ textarea.modal-form-field {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    max-width: 528px;
+  }
+}
+
 .close-button {
   position: absolute;
   right: 8px;
@@ -1892,6 +1900,7 @@ textarea.modal-form-field {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .close-button:hover, .close-button:focus {
@@ -1906,6 +1915,7 @@ textarea.modal-form-field {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   fill: black;
+  background-color: #ffffff;
 }
 
 .close-button:hover .modal-form-icon.close-icon,
