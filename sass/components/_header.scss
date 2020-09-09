@@ -95,6 +95,8 @@
     fill: $PrimaryTextColor;
     transition-property: color, fill;
     @extend %HoverAnimation;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         padding: 0;
